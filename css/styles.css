@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-image: url('/juhannuskello/img/kokko.png');
+    background-image: url('./juhannuskello/img/kokko.png');
     background-size: cover;        /* Covers entire screen */
     background-position: center;   /* Centers the image */
     background-repeat: no-repeat;  /* Prevents image repetition */
