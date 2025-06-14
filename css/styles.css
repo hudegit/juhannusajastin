@@ -20,3 +20,35 @@ p {
 .salaisuus{
 
 }
+
+/* Media query for larger screens */
+@media screen and (min-width: 1600px) {
+    body {
+        background-color: black; /* Black bars on sides */
+        background-image: none;  /* Remove background image from body */
+    }
+    
+    /* Create a container for your content */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 25%; /* Start at 25% to center the 50% width */
+        width: 50%;
+        height: 100vh;
+        background-image: url(../img/kokko.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1; /* Behind content */
+    }
+    
+    /* Constrain all content to 50% width */
+    body > * {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+    }
+}
